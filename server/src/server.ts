@@ -1,9 +1,3 @@
-import express from 'express';
+import { server } from "./http";
 
-const app = express();
-
-app.get('/', (req, res) => {
-    return res.json({ message: 'Hellow' })
-})
-
-app.listen(3000, () => console.log('rodando'))
+server.listen(3000, () => console.log('Server is running on port 3000'))
